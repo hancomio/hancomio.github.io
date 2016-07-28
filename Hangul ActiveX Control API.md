@@ -137,11 +137,13 @@ parameter set을 사용하지 않는 액션은 빈 문자열을 리턴한다.
   해당 Action과 연관되는 ParmeterSet Object.
 * 설명(Remarks)
   액션이 정의하기에 따라 다르지만, 일반적으로 다음과 같은 modal dialog result를 리턴한다.
+
   |ID|값|설명|
   |---|---|---|
   |hwpOK|IDOK|다이얼로그 박스의 확인버튼을 눌렀을 경우 리턴 되는 값|
   |hwpCancel|IDCANCEL|다이얼로그 박스의 취소버튼을 눌렀을 경우 리턴 되는 값|
   |hwpError|-1|실행시 에러가 발생 하였을 경우 리턴 되는 값|
+  
 * 예제(Example)
 * 참고항목(See Also)
 #### Execute
