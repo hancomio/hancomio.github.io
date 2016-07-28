@@ -80,11 +80,13 @@ javascript
     C++
 
 ```
+       CString Getsetid()
 ```
 
    javascript
 
 ```
+       (string) SetID
 ```
 
 * 설명(Remarks)
