@@ -185,9 +185,7 @@ parameter set을 사용하지 않는 액션은 빈 문자열을 리턴한다.
 * 설명(Remarks)
   ```CreateSet```, ```GetDefault```, ```PopupDialog```, ```Execute```를 차례로 부른 것과 같다.
   또, 다음 두 가지도 동일하다.
-   ```HwpCtrl.Run "action"```
-   ```HwpCtrl.CreateAction("action").Run```
-
+   ```HwpCtrl.Run "action"```, ```HwpCtrl.CreateAction("action").Run```
 * 예제(Example)
 * 참고항목(See Also)
 
