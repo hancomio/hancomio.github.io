@@ -58,3 +58,130 @@ act.Execute(set);// 액션 실행
  
 * 예제(Example)
 * 참고 항목(See Also)
+#### SetID[읽기전용]
+액션이 사용하는 ParameterSetID를 나타낸다
+* 구문(Syntanx)
+  C++
+  ```cpp
+  CString Getsetid()
+  ```
+  
+  javascript
+  ```javascript
+  (string)SetID
+  ```
+* 설명(Remarks)
+parameter set을 사용하지 않는 액션은 빈 문자열을 리턴한다.
+* 예제(Example)
+* 참고항목(See Also)
+
+### 메소드(Method)
+#### CreateSet
+액션과 대응하는 parameter set을 생성한다.
+* 구문(Syntanx)
+  C++
+  ```cpp
+  LPDISPATCH CreateSet()
+  ```
+  
+  javascript
+  ```javascript
+  ParameterSet CreateSet()
+  ```
+* 매개변수(Parameters)
+* 반환값(Return)
+  해당 Action과 연관되는 ParmeterSet Object.
+* 설명(Remarks)
+  parameter set을 사용하지 않는 액션의 경우 NULL이 리턴된다.
+  이 method는 다음과 같이 수행한 것과 동일하다.
+  ```Set param = HwpCtrl.CreateSet(action.SetID)```
+* 예제(Example)
+* 참고항목(See Also)
+
+#### GetDefault
+  현재 상태에 따라 액션 실행에 필요한 인수를 구한다.
+* 구문(Syntanx)
+  C++
+  ```cpp
+  void GetDefault(LPDISPATCH set)
+  ```
+  
+  javascript
+  ```javascript
+  GetDefault(ParameterSet set)
+  ```
+* 매개변수(Parameters)
+  set :인수를 저장할 ParameterSet
+* 반환값(Return)
+  해당 Action과 연관되는 ParmeterSet Object.
+* 설명(Remarks)
+  예를 들어 글자모양의 액션의 경우, 현재 셀렉션 상태에 따라 param의 아이템들이 채워진다.
+  서브셋을 만들 경우에는 서브셋을 만든 후에 GetDefault를 사용한다.
+* 예제(Example)
+* 참고항목(See Also)
+#### PopupDialog
+  액션의 대화상자를 띄운다.
+* 구문(Syntanx)
+  C++
+  ```cpp
+  long PopupDialog(LPDISPATCH set)
+  ```
+  
+  javascript
+  ```javascript
+  number PopupDialog(ParameterSet set)
+  ```
+* 매개변수(Parameters)
+  set : 여기에 지정한 아이템의 값에 따라 대화상자의 각 컨트롤의 초기 값이 결정되고, 대화상자가 닫힌 후에는 사용자가 지정한 값들이 담겨 돌아온다.
+* 반환값(Return)
+  해당 Action과 연관되는 ParmeterSet Object.
+* 설명(Remarks)
+  액션이 정의하기에 따라 다르지만, 일반적으로 다음과 같은 modal dialog result를 리턴한다.
+  |ID|값|설명|
+  |---|---|---|
+  |hwpOK|IDOK|다이얼로그 박스의 확인버튼을 눌렀을 경우 리턴 되는 값|
+  |hwpCancel|IDCANCEL|다이얼로그 박스의 취소버튼을 눌렀을 경우 리턴 되는 값|
+  |hwpError|-1|실행시 에러가 발생 하였을 경우 리턴 되는 값|
+* 예제(Example)
+* 참고항목(See Also)
+#### Execute
+  지정한 인수로 액션을 실행한다.
+* 구문(Syntanx)
+  C++
+  ```cpp
+  long Execute(LPDISPATCH set)
+  ```
+  
+  javascript
+  ```javascript
+  number Execute(ParameterSet set)
+  ```
+* 매개변수(Parameters)
+  set : 액션의 실행을 제어할 인수. parameter set의 종류와 아이템의 의미는 액션이 정의한 바에 따라 다르다.
+* 반환값(Return)
+  액션이 성공하면 1, 실패하면 0을 반환한다.
+* 설명(Remarks)
+* 예제(Example)
+* 참고항목(See Also)
+#### Run
+  액션을 실행한다.
+* 구문(Syntanx)
+  C++
+  ```cpp
+  void Run()
+  ```
+  
+  javascript
+  ```javascript
+  Run()
+  ```
+* 매개변수(Parameters)
+* 반환값(Return)
+* 설명(Remarks)
+  CreateSet, GetDefault, PopupDialog, Execute를 차례로 부른 것과 같다.
+  또, 다음 두 가지도 동일하다.
+   HwpCtrl.Run "action"
+   HwpCtrl.CreateAction("action").Run
+* 예제(Example)
+* 참고항목(See Also)
+
