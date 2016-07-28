@@ -119,6 +119,7 @@ parameter set을 사용하지 않는 액션은 빈 문자열을 리턴한다.
   서브셋을 만들 경우에는 서브셋을 만든 후에 GetDefault를 사용한다.
 * 예제(Example)
 * 참고항목(See Also)
+
 #### PopupDialog
   액션의 대화상자를 띄운다.
 * 구문(Syntanx)
@@ -146,6 +147,7 @@ parameter set을 사용하지 않는 액션은 빈 문자열을 리턴한다.
   
 * 예제(Example)
 * 참고항목(See Also)
+
 #### Execute
   지정한 인수로 액션을 실행한다.
 * 구문(Syntanx)
@@ -165,6 +167,7 @@ parameter set을 사용하지 않는 액션은 빈 문자열을 리턴한다.
 * 설명(Remarks)
 * 예제(Example)
 * 참고항목(See Also)
+
 #### Run
   액션을 실행한다.
 * 구문(Syntanx)
