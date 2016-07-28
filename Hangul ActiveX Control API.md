@@ -184,6 +184,7 @@ parameter set을 사용하지 않는 액션은 빈 문자열을 리턴한다.
   또, 다음 두 가지도 동일하다.
    ```HwpCtrl.Run "action"```
    ```HwpCtrl.CreateAction("action").Run```
+
 * 예제(Example)
 * 참고항목(See Also)
 
