@@ -26,6 +26,7 @@
 * HDD
   - 설치공간 1GB 이상
   - 변환저장 공간 수GB 이상 권장
+
 ### Software
 * Java v1.7(Oracle JRE v1.7, OpenJDK v1.7) 이상
 * 32, 64 bit 모두 지원하며 64bit 권장
@@ -34,5 +35,6 @@
 * Linux
   - Fedora, CentOS, Redhat Enterprise
   - Ubuntu
+
 ## 제품에 대한 자세한 내용은 아래 링크를 참고 하세요
 * [DocsConverter 소개 자료](http://www.hancom.com/office_solution/product06_01.jsp)
