@@ -33,5 +33,8 @@
 * 필요한 기능 문의 이전에 구현하려는 기능에 대한 설명 및 구현 목적 사용하는 언어를 반드시 표시
 * 문제사항에 대한 기술지원은 화면캡쳐, 샘플문서, 관련 코드 등을 포함하여 문의
 
-## 자세한 내용은 아래의 링크를 참고해 주세요.
+## API 문서
+* [한글 ActiveX 컨트롤 API 문서](Hangul ActiveX Control API.md)
+
+## 한글 ActiveX Control에 대해서 자세히 알고 싶으시면 공식 홈페이지를 참고 하세요.
 * [한글 ActiveX Control](http://www.hancom.com/office_solution/product04_02.jsp)
