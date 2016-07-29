@@ -52,7 +52,7 @@
 
 ### HTML 공통 라이브러리 복사
 libs 폴더를 Web root 폴더에 복사합니다. (http://web-server/libs 경로)
-자세한 설명은 [Html Viewer](#Html Viewer)에 설명이 되어 있습니다.
+자세한 설명은 [Html Viewer](#Html-Viewer)에 설명이 되어 있습니다.
 
 ## 사용법
 다음과 같이 명령 프롬프트로 실행합니다.
