@@ -40,7 +40,7 @@
 * [공식 홈페이지 DocsConverter 소개 자료](http://www.hancom.com/office_solution/product06_01.jsp)
 
 ## 제품 설치 방법
-* DocsConverter의 설치 방법은 직접 설치와 Docker를 이용한 설치가 있습니다.
+DocsConverter의 설치 방법은 직접 설치와 Docker를 이용한 설치가 있습니다.
 
 ### 직접 설치
 * [Linux 설치 가이드](v1.0/DocsConverter Installation Guide for Linux ko.md)
