@@ -5,11 +5,11 @@
 
 ## 사전 요구사항
 시작하기 전에 다음과 같은 설치환경 및 파일들이 준비되어 있어야 합니다.
-   1. CentOS 6.x 64bit
-   2. DocsConverter 인스톨러 : hermes-7.0.0.x-installer-version-linux64.zip
-   3. DocsConverter 라이선스 파일 : license.dat
-   4. Oracle JDK : Oracle JDK-7u80 (jdk-7u80-linux-x64.rpm)
-   5. Package: ImageMagick, Cairo
+* CentOS 6.x 64bit
+* DocsConverter 인스톨러 : hermes-7.0.0.x-installer-version-linux64.zip
+* DocsConverter 라이선스 파일 : license.dat
+* Oracle JDK : Oracle JDK-7u80 (jdk-7u80-linux-x64.rpm)
+* Package: ImageMagick, Cairo
 
 ### 설명
 DocsConverter는 JDK를 필요로 합니다. 
@@ -249,26 +249,25 @@ HDCS has been successfully removed.
 
 DocsConverter 설치 과정에서 HDCS_HOME 디렉토리 아래에 HDCS_RELEASE.xml 파일이 생성됩니다. 해당 파일을 통해 HDCS 및 함께 설치된 패키지들의 버전 정보를 확인할 수 있습니다.
 
-```
+```bash
 [root@localhost hdcs]# ls -a
 .  ..  HDCS_RELEASE.xml  hermes  processing  tomcat
 ```
 
-```
-	<?xml version="1.0" encoding="UTF-8"?>
-	<hdcs>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<hdcs>
+	<version>7.0.0.70</version>
+	<install_date>2015-11-03 15:58:53</install_date>
+	<component>
+		<name>hermes</name>
 		<version>7.0.0.70</version>
-		<install_date>2015-11-03 15:58:53</install_date>
-		<component>
-			<name>hermes</name>
-			<version>7.0.0.70</version>
-		</component>
-		<component>
-			<name>hncfilter</name>
-			<version>9.20.0.574-1</version>
-		</component>
-		<component>
-
+	</component>
+	<component>
+		<name>hncfilter</name>
+		<version>9.20.0.574-1</version>
+	</component>
+	<component>
 …
 ```
 
@@ -277,7 +276,7 @@ DocsConverter 설치 과정에서 HDCS_HOME 디렉토리 아래에 HDCS_RELEASE.
 
 설치 과정은 hermes_install.log 파일에 기록됩니다. DocsConverter 설치 도중 문제가 발생할 경우, 원인을 파악하기 위하여 로그파일의 내용을 참고할 수 있습니다. 서버 프로세싱 로그는 hermes 및 processing 아래의 logs 디렉토리에 기록됩니다. 문제가 발생할 경우 해당 로그파일과 함께 기술지원을 요청하시기 바랍니다.
 
-```
+```sh
 [root@hdcs logs]# ll /root/hancom/HDCS/hermes/logs
 total 164
 -rw-r--r--. 1 root root 167331 Sep 18 13:53 hermes.log
