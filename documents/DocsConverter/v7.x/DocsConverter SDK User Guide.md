@@ -81,11 +81,11 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
 
 * 필수 파라미터
 
-|이름|유형|설명|
-|---|---|---|
-|INPUT_FILE|string|입력 파일의 경로입니다.|
-|OUTPUT_DIR|string|결과 파일을 출력할 디렉터리의 경로입니다.경로가 존재하지 않을 경우 새로 생성합니다.|
-|OUTPUT_TYPE|string|입력 문서를 변환할 대상 포맷입니다.(html, pdf, image, text)|
+  |이름|유형|설명|
+  |---|---|---|
+  |INPUT_FILE|string|입력 파일의 경로입니다.|
+  |OUTPUT_DIR|string|결과 파일을 출력할 디렉터리의 경로입니다.경로가 존재하지 않을 경우 새로 생성합니다.|
+  |OUTPUT_TYPE|string|입력 문서를 변환할 대상 포맷입니다.(html, pdf, image, text)|
 
 #### 옵션 파라미터
 
@@ -93,37 +93,37 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
 
 * 공통 변환 옵션
 
-|이름|유형|설명|
-|---|---|---|
-|firstPage|integer|변환 시작 페이지를 지정합니다.변환 범위를 지정하여 변환할 경우 사용합니다. 지정하지 않을 경우 문서의 첫 페이지부터 변환합니다.|
-|lastPage|integer|변환 종료 페이지를 지정합니다. 변환 범위를 지정하여 변환할 경우 사용합니다. 지정하지 않을 경우 문서의 마지막 페이지까지 변환합니다.|
-|maxPage|integer|변환할 최대 페이지 수를 지정합니다. firstPage, lastPage 옵션과 함께 사용할 경우 maxPage 옵션이 우선적으로 적용됩니다. 지정하지 않을 경우 firstPage~lastPage 내 모든 페이지를 변환합니다.|
-|imgType|string|이미지로 변환할 경우 포맷을 지정합니다.(jpg, png) 지정하지 않을 경우 jpg 포맷으로 변환합니다.|
-|pageSplit|boolean|html 변환 시 페이지를 나눌지 여부를 결정합니다.<ul><li>true: 페이지 당 1개의 html 파일로 변환합니다.</li><li>false: 총 1개의 html 파일로 변환합니다. 지정하지 않을 경우 기본 값은 false입니다.</li></ul>|
+  |이름|유형|설명|
+  |---|---|---|
+  |firstPage|integer|변환 시작 페이지를 지정합니다.변환 범위를 지정하여 변환할 경우 사용합니다. 지정하지 않을 경우 문서의 첫 페이지부터 변환합니다.|
+  |lastPage|integer|변환 종료 페이지를 지정합니다. 변환 범위를 지정하여 변환할 경우 사용합니다. 지정하지 않을 경우 문서의 마지막 페이지까지 변환합니다.|
+  |maxPage|integer|변환할 최대 페이지 수를 지정합니다. firstPage, lastPage 옵션과 함께 사용할 경우 maxPage 옵션이 우선적으로 적용됩니다. 지정하지 않을 경우 firstPage~lastPage 내 모든 페이지를 변환합니다.|
+  |imgType|string|이미지로 변환할 경우 포맷을 지정합니다.(jpg, png) 지정하지 않을 경우 jpg 포맷으로 변환합니다.|
+  |pageSplit|boolean|html 변환 시 페이지를 나눌지 여부를 결정합니다.<ul><li>true: 페이지 당 1개의 html 파일로 변환합니다.</li><li>false: 총 1개의 html 파일로 변환합니다. 지정하지 않을 경우 기본 값은 false입니다.</li></ul>|
 
 
 * XLS/XLSX 변환 옵션
 
-|이름|유형|설명|
-|---|---|---|
-|xlsExportPageType|string|<ul><li>xls 파일을 변환하는 경우, 이미지 출력 방식을 선택합니다.</li><li>sheet: 1개의 시트 당 1개의 이미지로 변환합니다.</li><li>print: 쪽 나눔 당 1개의 이미지로 변환합니다.</li><li>tile: 잘게 자른 이미지로 변환합니다. 지정하지 않을 경우 기본 값은 sheet입니다.</li></ul>|
-|maxCol|integer|xls 파일을 html 변환하는 경우, 최대 출력 열수를 지정합니다. 지정하지 않을 경우 전체 시트를 변환합니다.|
-|maxRow|integer|xls 파일을 html 변환하는 경우, 최대 출력 행수를 지정합니다. 지정하지 않을 경우 전체 시트를 변환합니다.|
+  |이름|유형|설명|
+  |---|---|---|
+  |xlsExportPageType|string|<ul><li>xls 파일을 변환하는 경우, 이미지 출력 방식을 선택합니다.</li><li>sheet: 1개의 시트 당 1개의 이미지로 변환합니다.</li><li>print: 쪽 나눔 당 1개의 이미지로 변환합니다.</li><li>tile: 잘게 자른 이미지로 변환합니다. 지정하지 않을 경우 기본 값은 sheet입니다.</li></ul>|
+  |maxCol|integer|xls 파일을 html 변환하는 경우, 최대 출력 열수를 지정합니다. 지정하지 않을 경우 전체 시트를 변환합니다.|
+  |maxRow|integer|xls 파일을 html 변환하는 경우, 최대 출력 행수를 지정합니다. 지정하지 않을 경우 전체 시트를 변환합니다.|
 
 
 * HWP 변환 옵션
 
-|이름|유형|설명|
-|---|---|---|
-|requestXmlPath|string|hwp 파일을 제어하는 경우, 수행할 액션을 담은 XML 파일의 경로를 지정합니다.|
-|pdfCompatible|boolean|hwp를 html로 변환시 phantomJS 와 호환성을 적용한다. phatomJS에서 SVG Fill Pattern을 완벽히 지원하지 못하므로 html 생성시 SVG Fill Pattern용 이미지를 사용하지 않고 미리 랜더링된 이미지를 사용하도록 한다.|
+  |이름|유형|설명|
+  |---|---|---|
+  |requestXmlPath|string|hwp 파일을 제어하는 경우, 수행할 액션을 담은 XML 파일의 경로를 지정합니다.|
+  |pdfCompatible|boolean|hwp를 html로 변환시 phantomJS 와 호환성을 적용한다. phatomJS에서 SVG Fill Pattern을 완벽히 지원하지 못하므로 html 생성시 SVG Fill Pattern용 이미지를 사용하지 않고 미리 랜더링된 이미지를 사용하도록 한다.|
 
 
 * 워터마크 적용 옵션
 
-|이름|유형|설명|
-|---|---|---|
-|watermarkTemplate|string|hwp/doc/ppt/xls 문서를 html로 변환시 사용가능하며, SDK의 conf 폴더에 있는 template 파일의 이름을 지정합니다. template 파일은 “파일명.properties” 의 형태로 되어 있으며 수정 또는 추가를 할 수 있습니다. template 파일은 이미지 또는 텍스트의 속성에 대한 정보를 가지고 있습니다.<ul><li>watermark1 : conf/watermark1.properties 파일을 사용하여 워터마크를 생성합니다.</li><li>watermark2 : conf/watermark2.properties 사용</li></ul>|
+  |이름|유형|설명|
+  |---|---|---|
+  |watermarkTemplate|string|hwp/doc/ppt/xls 문서를 html로 변환시 사용가능하며, SDK의 conf 폴더에 있는 template 파일의 이름을 지정합니다. template 파일은 “파일명.properties” 의 형태로 되어 있으며 수정 또는 추가를 할 수 있습니다. template 파일은 이미지 또는 텍스트의 속성에 대한 정보를 가지고 있습니다.<ul><li>watermark1 : conf/watermark1.properties 파일을 사용하여 워터마크를 생성합니다.</li><li>watermark2 : conf/watermark2.properties 사용</li></ul>|
 
 
 
@@ -249,45 +249,45 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
 ### 기본 파일/폴더 설명
 * 생성 파일/폴더
 
-|이름|설명|
-|---|---|
-|hview.html|<ul><li>컨테이너 html</li><li>사용자 브라우저에 URL 형식으로 전달</li><li>document.html 과 같은 경로에 생성되며 고정된 파일명이므로 hview.html을 항상 사용</li></ul>|
-|document.html (document_####.html)|<ul><li>컨텐츠 html</li><li>hview.html 내부에서 iframe 영역에 표시</li><li>document.html은 싱글 변환 파일명이며 –DpageSplit 옵션으로 페이지 분할 변환한 경우에는 document_####.html 형식의 파일명으로 생성</li></ul>|
-|document.json|<ul><li>hview.html에서 컨텐츠의 정보를 알아내는데 필요한 Json 파일</li></ul>|
-|document.files|<ul><li>document.html (document_####.html)에서 컨텐츠 표시에 사용되는 리소스 디렉토리</li></ul>|
+  |이름|설명|
+  |---|---|
+  |hview.html|<ul><li>컨테이너 html</li><li>사용자 브라우저에 URL 형식으로 전달</li><li>document.html 과 같은 경로에 생성되며 고정된   파일명이므로 hview.html을 항상 사용</li></ul>|
+  |document.html (document_####.html)|<ul><li>컨텐츠 html</li><li>hview.html 내부에서 iframe 영역에 표시</li><li>document.html은 싱글 변환 파일명이며 –DpageSplit 옵션으로 페이지 분할 변환한 경우에는 document_####.html 형식의 파일명으로 생성</li></ul>|
+  |document.json|<ul><li>hview.html에서 컨텐츠의 정보를 알아내는데 필요한 Json 파일</li></ul>|
+  |document.files|<ul><li>document.html (document_####.html)에서 컨텐츠 표시에 사용되는 리소스 디렉토리</li></ul>|
 
 
 
 * 라이브러리 폴더
 
-|이름|설명|
-|---|---|
-|libs|<ul><li>hview.html 의 UI/동작에 필요한 라이브러리 폴더</li><li>javascript, css, image 로 구성</li><li>hview.html 의 커스터마이징은 해당 폴더의 파일을 수정</li><li>현재 디폴트로 web root 기준으로 /libs 경로에 폴더 복사</li><li>설치는 SDK 배포 파일에 libs 폴더를 /libs 경로로 복사</li><li>설치 확인은 http://<domain>/libs/logo.png URL을 브라우저에 입력시 한컴 로고 이미지가 정상적으로 보이는지 확인</li></ul>|
+  |이름|설명|
+  |---|---|
+  |libs|<ul><li>hview.html 의 UI/동작에 필요한 라이브러리 폴더</li><li>javascript, css, image 로 구성</li><li>hview.html 의 커스터마이징은 해당 폴더의 파일을 수정</li><li>현재 디폴트로 web root 기준으로 /libs 경로에 폴더 복사</li><li>설치는 SDK 배포 파일에 libs 폴더를 /libs 경로로 복사</li><li>설치 확인은 http://<domain>/libs/logo.png URL을 브라우저에 입력시 한컴 로고 이미지가 정상적으로 보이는지 확인</li></ul>|
 
 * 전체 파일 구조
 
-|이름|설명|
-|---|---|
-|http://$DOMAIN/libs|고정된 라이브러리 폴더|
-|http://$DOMAIN/path-1/.../output/hview.html|변환된 HTML 파일과 같은 경로에 위치|
+  |이름|설명|
+  |---|---|
+  |http://$DOMAIN/libs|고정된 라이브러리 폴더|
+  |http://$DOMAIN/path-1/.../output/hview.html|변환된 HTML 파일과 같은 경로에 위치|
 
 
 ### 커스터마이징
 * libs 폴더내 파일들
 
-|라이브러리명|필터|
-|---|---|---|
-|hview.js|공통|
-|template.js|공통|
-|template.css|공통|
-|hwp.js|HWP|
-|hwp.css|HWP|
-|write.js|DOC|
-|write.css|DOC|
-|show.js|PPT|
-|show.css|PPT|
-|calc.js|XLS|
-|calc.css|XLS|
+  |라이브러리명|필터|
+  |---|---|---|
+  |hview.js|공통|
+  |template.js|공통|
+  |template.css|공통|
+  |hwp.js|HWP|
+  |hwp.css|HWP|
+  |write.js|DOC|
+  |write.css|DOC|
+  |show.js|PPT|
+  |show.css|PPT|
+  |calc.js|XLS|
+  |calc.css|XLS|
 
 * hview.js
   hview.html 의 뷰어 동작에 필요한 코드입니다.
