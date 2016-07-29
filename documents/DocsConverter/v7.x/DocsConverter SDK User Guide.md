@@ -80,6 +80,7 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
 명령 프롬프트에서 순서대로 입력합니다.
 
 <필수 파라미터>
+
 |이름|유형|설명|
 |---|---|---|
 |INPUT_FILE|string|입력 파일의 경로입니다.|
@@ -91,6 +92,7 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
 명령 프롬프트에서 -D이름=값 형식으로 입력합니다. 입력하지 않을 경우 기본 값이 사용됩니다.
 
 <공통 변환 옵션>
+
 |이름|유형|설명|
 |---|---|---|
 |firstPage|integer|변환 시작 페이지를 지정합니다.변환 범위를 지정하여 변환할 경우 사용합니다. 지정하지 않을 경우 문서의 첫 페이지부터 변환합니다.|
