@@ -19,6 +19,7 @@
 * 모바일 보안을 위한 No-Data, No-Cache, No-Screenshot을 지원합니다.
   - 모바일용 문서 변환 시 모바일 기기에 문서를 저장하거나 캐시를 남기지 않도록 하는 No-Data, No-Cache 모바일 보안 규격을 지원
   - 모바일 화면을 스크린샷하여 저장/전송할 수 없도록하는 보안 기능 지원
+
 ## 사용환경
 ### Hardware
 * Intel Xeon 2.6GHz 이상, 최소 4코어, 8코어 이상 권장Memory 최소 8GB, 16GB 이상 권장
