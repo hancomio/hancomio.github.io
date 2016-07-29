@@ -21,6 +21,7 @@ DocsConverter를 설치하면서 제어 서버로 ‘Tomcat’, 변환 프로세
   - Debian SID 64bit
 
 본 설명서에서는 CentOS 6.x의 최신버전이 설치되어 있으며 yum 명령어를 통한 패키지 업데이트가 가능하다고 가정합니다.
+![CentOS 6.x minimal install](images/1.png)
 
 
 ### 데이터베이스
@@ -37,6 +38,7 @@ CentOS 6.6에서의 DocsConverter 빠른 설치 과정을 설명합니다. 설�
 ### 글꼴 및 Sun JDK 설치
 
 먼저 JDK를 설치해야 합니다. (버전 1.7 이상) http://java.oracle.com 을 방문하여 다운로드합니다.
+![Install JDK 1.7](images/2.png)
 
  
 다운로드 후, 서버에 root 계정으로 로그인하여 아래와 같은 과정으로 JDK를 설치합니다.
@@ -179,11 +181,11 @@ DocsConverter 설치 작업이 성공적으로 완료되었습니다.
 #### 라이선스 등록
 
 라이선스 파일은 웹 브라우저를 통해 접속한 후 관리자 화면에서 등록할 수 있습니다.
-
+![Login DocsConverter](images/3.png)
 
 기본 계정 및 비밀번호는 “admin/admin”입니다. 
 서버에 접근하려면 iptables 설정을 변경하거나 제거해야 할 수도 있습니다.
-
+![register license](images/4.png)
 
 
 로그인한 후, 상단 메뉴바에서 라이선스 탭을 선택하여 라이선스 파일을 적용합니다.
@@ -191,7 +193,7 @@ DocsConverter 설치 작업이 성공적으로 완료되었습니다.
 #### 변환 테스트
 
 “변환테스트” 탭에서 변환 기능을 시험해 볼 수 있습니다. 필터를 선택한 후 “변환” 버튼을 클릭하면, 몇 초 뒤에 변환 결과가 하단에 나타납니다. 
-
+![convert document](images/5.png)
 
 
 각 변환 파라미터에 대한 상세한 설명은 화면 우측 최상단 API 가이드 문서 링크를 참조하시기 바랍니다.
