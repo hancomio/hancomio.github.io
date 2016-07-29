@@ -19,6 +19,19 @@
 * 모바일 보안을 위한 No-Data, No-Cache, No-Screenshot을 지원합니다.
   - 모바일용 문서 변환 시 모바일 기기에 문서를 저장하거나 캐시를 남기지 않도록 하는 No-Data, No-Cache 모바일 보안 규격을 지원
   - 모바일 화면을 스크린샷하여 저장/전송할 수 없도록하는 보안 기능 지원
-
+## 사용환경
+### Hardware
+* Intel Xeon 2.6GHz 이상, 최소 4코어, 8코어 이상 권장Memory 최소 8GB, 16GB 이상 권장
+* HDD
+  - 설치공간 1GB 이상
+  - 변환저장 공간 수GB 이상 권장
+### Software
+* Java v1.7(Oracle JRE v1.7, OpenJDK v1.7) 이상
+* 32, 64 bit 모두 지원하며 64bit 권장
+* Windows
+  - Windows 2008 (recommanded)
+* Linux
+  - Fedora, CentOS, Redhat Enterprise
+  - Ubuntu
 ## 제품에 대한 자세한 내용은 아래 링크를 참고 하세요
 * [DocsConverter 소개 자료](http://www.hancom.com/office_solution/product06_01.jsp)
