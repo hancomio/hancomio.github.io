@@ -209,7 +209,7 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
 * 전자결재용 필터 변환
   - sample6.hwp 파일의 "SignImg" 필드에 이미지를 삽입하고, "strReqName", "strReasonMemo" 필드의 텍스트 내용을 추출합니다. 다음과 같이 request xml 파일을 생성합니다.
   ```xml
-<request>
+  <request>
     <actions>
         <action id="insertImage">
             <param id="fieldName">SignImg</param>
@@ -223,8 +223,8 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
             <param id="fieldName">strReasonMemo</param>
         </action>
     </actions>
-</request>
-```xml
+  </request>
+  ```
 
   그리고 다음과 같이 호출합니다.
 
@@ -236,20 +236,21 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
               output/document.xml (텍스트 내용이 담긴 XML 파일)
 
   XML 파일은 아래와 같이 생성됩니다.
-```xml
-<responce>
+  ```xml
+  <responce>
     <return-vals>
         <return-val field="strReqName">이름</return-val>
         <return-val field="strReasonMemo">Insert MEMO Message</return-val>
     <return-vals>
-</responce>
-```
+  </responce>
+  ```
 
 ## Html Viewer
 ### 기본 파일/폴더 설명
 * 생성 파일/폴더
 
 |이름|설명|
+|---|---|
 |hview.html|<ul><li>컨테이너 html</li><li>사용자 브라우저에 URL 형식으로 전달</li><li>document.html 과 같은 경로에 생성되며 고정된 파일명이므로 hview.html을 항상 사용</li></ul>|
 |document.html (document_####.html)|<ul><li>컨텐츠 html</li><li>hview.html 내부에서 iframe 영역에 표시</li><li>document.html은 싱글 변환 파일명이며 –DpageSplit 옵션으로 페이지 분할 변환한 경우에는 document_####.html 형식의 파일명으로 생성</li></ul>|
 |document.json|<ul><li>hview.html에서 컨텐츠의 정보를 알아내는데 필요한 Json 파일</li></ul>|
@@ -267,19 +268,26 @@ convert.sh INPUT_FILE OUTPUT_DIR OUTPUT_TYPE [-Dkey=value –Dkey=value ...]
 
 |이름|설명|
 |---|---|
-|http://<domain>/libs|고정된 라이브러리 폴더|
-|http://<domain>/path-1/.../output/hview.html|변환된 HTML 파일과 같은 경로에 위치|
+|http://$DOMAIN/libs|고정된 라이브러리 폴더|
+|http://$DOMAIN/path-1/.../output/hview.html|변환된 HTML 파일과 같은 경로에 위치|
 
 
 ### 커스터마이징
 * libs 폴더내 파일들
 
-|공통 라이브러리|필터별 라이브러리|필터명|
+|라이브러리명|필터|
 |---|---|---|
-|<ul><li>hview.js</li><li>template.js</li><li>template.css</li></ul>|<ul><li>hwp.js</li><li>hwp.css</li></ul>|HWP|
-| |<ul><li>write.js</li><li>write.css</li></ul>|DOC|
-| |<ul><li>show.js</li><li>show.css</li></ul>|PPT|
-| |<ul><li>calc.js</li><li>calc.css</li></ul>|XLS|
+|hview.js|공통|
+|template.js|공통|
+|template.css|공통|
+|hwp.js|HWP|
+|hwp.css|HWP|
+|write.js|DOC|
+|write.css|DOC|
+|show.js|PPT|
+|show.css|PPT|
+|calc.js|XLS|
+|calc.css|XLS|
 
 * hview.js
   hview.html 의 뷰어 동작에 필요한 코드입니다.
