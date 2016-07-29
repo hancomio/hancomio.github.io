@@ -43,8 +43,8 @@
 DocsConverter의 설치 방법은 직접 설치와 Docker를 이용한 설치가 있습니다.
 
 ### 직접 설치
-* [Linux 설치 가이드](v1.0/DocsConverter Installation Guide for Linux ko.md)
-* [Windows 설치 가이드](v1.0/DocsConverter Installation Guide for Windows ko.md)
+* [Linux 설치 가이드](v7.x/DocsConverter Installation Guide for Linux ko.md)
+* [Windows 설치 가이드](v7.x/DocsConverter Installation Guide for Windows ko.md)
 
 ### Docker를 이용한 설치 방법
 * 아직 자료가 없습니다.
