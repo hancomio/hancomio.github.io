@@ -34,8 +34,7 @@
 # yum -y install ImageMagick
 ```
 
-3D효과를 표현하려면 X Window System 환경이어야 하며 Minimal OS 설치를 한 경우에는 Xvfb 패키지를 설치하여 그 기능을 대신 수행할 수 있습니다.
-3D효과 지원이 안되는 경우 2D로 대체되기 때문에 필수 구성요소는 아닙니다.
+3D효과를 표현하려면 X Window System 환경이어야 하며 Minimal OS 설치를 한 경우에는 Xvfb 패키지를 설치하여 그 기능을 대신 수행할 수 있습니다. 3D효과 지원이 안되는 경우 2D로 대체되기 때문에 필수 구성요소는 아닙니다.
 
 * Xvfb 패키지 설치
 ```
@@ -53,7 +52,7 @@
 
 ### HTML 공통 라이브러리 복사
 libs 폴더를 Web root 폴더에 복사합니다. (http://web-server/libs 경로)
-자세한 설명은 “4. Html Viewer”에 설명이 되어 있습니다.
+자세한 설명은 [Html Viewer](#Html Viewer)에 설명이 되어 있습니다.
 
 ## 사용법
 다음과 같이 명령 프롬프트로 실행합니다.
