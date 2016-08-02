@@ -55,13 +55,13 @@ act.Execute(set);// 액션 실행
 * 구문(Syntax)
 C++
 
-```cppcpp
+```cpp
 CString Getactid()
 ```
 
 javascript
 
-```javascriptjavascript
+```javascript
 (string) ActID
 ```
 
@@ -85,7 +85,7 @@ javascript
 
    javascript
 
-```javascriptjavascript
+```javascript
        (string) SetID
 ```
 
@@ -111,7 +111,7 @@ LPDISPATCH CreateSet()
 
 javascript
 
-```javascriptjavascript
+```javascript
 ParameterSet CreateSet()
 ```
 
@@ -146,7 +146,7 @@ void GetDefault(LPDISPATCH set)
 
 javascript
 
-```javascriptjavascript
+```javascript
 GetDefault(ParameterSet set)
 ```
 
@@ -173,13 +173,13 @@ set
 * 구문(Syntax)
 C++
  
-```
+```cpp
 long PopupDialog(LPDISPATCH set)
 ```
  
 javascript
  
-```
+```javascript
 number PopupDialog(ParameterSet set)
 ```
  
@@ -218,7 +218,7 @@ long Execute(LPDISPATCH set)
 
 javascript
 
-```javascriptjavascript
+```javascript
 number Execute(ParameterSet set)
 ```
 
@@ -248,7 +248,7 @@ void Run()
 
 javascript
 
-```javascriptjavascript
+```javascript
 Run()
 ```
 
