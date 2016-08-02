@@ -148,7 +148,45 @@ HwpCtrl API 파일에는 한글 컨트롤에서 사용되는 주요 객체를 �
 그림 12. 글자모양 및 색 변경 프로그램 소스
 
 ## 각 언어별 한글 컨트롤 활용법
-### C#을 이용한 한글 컨트롤 활용
+### C#을 이용한 한글 컨트롤 활용(Visual Studio 2008)
+1. 새 프로젝트를 만든다.
+  - **Windows Forms 응용 프로그램**을 선택
+
+  ![Windows Forms응용 프로그램 선택](images/cs1.png)
+  
+2. **도구 상자**에서 마우스 우클릭 -> **항목 선택** 클릭
+
+  ![도구상자 -> 항목선택](images/cs2.png)
+
+3. **COM 구성 요소**에서 HwpCtrl Control 선택한 후 확인
+
+  ![COM 구성요소 -> HwpCtrl Control](images/cs3.png)
+
+4. 아래와 같이 **도구 상자**에 **HwpCtrl Control** 항목이 생성
+
+  ![도구 상자 -> HwpCtrl Control](images/cs4.png)
+ 
+5. **HwpCtrl Control** 도구를 마우스로 드래그하여 디자인 화면의 윈도우 창에 삽입
+  - **속성** 창 -> **디자인** -> Name 확인 (아래 그림에서는 axHwpCtrl1)
+
+  ![속성창 -> 디자인 -> Name 확인](images/cs5.png)
+   
+  * 빌드 후 실행 시, 아래와 같은 에러가 발생했을 때
+    ```
+    클래스가 등록되지 않았습니다. (예외가 발생한 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))
+    ```
+    - 아래 그림과 같이, [프로젝트 속성] -> [빌드] -> [플랫폼 대상] -> x86 으로 변경
+    
+    ![프로젝트 속성 -> 빌드 -> 플랫폼 대상 -> x86](images/cs6.png)
+    
+    * **한/글컨트롤은 64비트 프로그램에서는 동작하지 않습니다.**
+6. 실행하면 윈도우 창에 한/글컨트롤이 Embedding되어 실행된다.
+  ![한/글 컨트롤이 Embedding](images/cs7.png)
+
+7. API와 Action 사용 예제 – 파일열기, 표 생성
+  ![API와 Action 사용 예제](images/cs8.png)
+
+
 ### VB를 이용한 한글 컨트롤 활용
 ### MFC를 이용한 한글 컨트롤 활용
 ### JavaScript를 이용한 한글 컨트롤 활용
