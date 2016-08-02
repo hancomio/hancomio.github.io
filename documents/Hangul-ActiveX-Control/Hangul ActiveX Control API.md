@@ -55,13 +55,13 @@ act.Execute(set);// 액션 실행
 * 구문(Syntax)
 C++
 
-```
+```cppcpp
 CString Getactid()
 ```
 
 javascript
 
-```
+```javascriptjavascript
 (string) ActID
 ```
 
@@ -79,13 +79,13 @@ javascript
 * 구문(Syntax)
     C++
 
-```
+```cpp
        CString Getsetid()
 ```
 
    javascript
 
-```
+```javascriptjavascript
        (string) SetID
 ```
 
@@ -105,13 +105,13 @@ javascript
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH CreateSet()
 ```
 
 javascript
 
-```
+```javascriptjavascript
 ParameterSet CreateSet()
 ```
 
@@ -140,13 +140,13 @@ Set param = HwpCtrl.CreateSet(action.SetID)
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void GetDefault(LPDISPATCH set)
 ```
 
 javascript
 
-```
+```javascriptjavascript
 GetDefault(ParameterSet set)
 ```
 
@@ -212,13 +212,13 @@ set
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long Execute(LPDISPATCH set)
 ```
 
 javascript
 
-```
+```javascriptjavascript
 number Execute(ParameterSet set)
 ```
 
@@ -242,13 +242,13 @@ Run, HwpCtrl.Run(HwpCtrl Object 메소드 중 Run부분)
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void Run()
 ```
 
 javascript
 
-```
+```javascriptjavascript
 Run()
 ```
 
@@ -285,13 +285,13 @@ HwpCtrl.CreateAction("action").Run
 * 구문(Syntax)
 C++
 
-```
+```cpp
 short GetCtrlCh()
 ```
 
 javascript
 
-```
+```javascript
 (number) CtrlCh
 ```
 
@@ -333,13 +333,13 @@ javascript
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString Getctrlid()
 ```
 
 javascript
 
-```
+```javascript
 (string) CtrlID
 ```
 
@@ -403,7 +403,7 @@ MsgBox cnt
 
 C++
 
-```
+```cpp
 // 그리기 개체를 찾아서 그 위치로 이동하는 예제
 void FindCtrl()
 {
@@ -436,13 +436,13 @@ CtrlCh
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetNext()
 ```
 
 javascript
 
-```
+```javascript
 (CtrlCode) Next
 ```
 
@@ -460,13 +460,13 @@ HwpCtrl.CreateSet, Prev
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetPrev()
 ```
 
 javascript
 
-```
+```javascript
 (CtrlCode) Prev
 ```
 
@@ -485,14 +485,14 @@ HwpCtrl.LastCtrl, Next
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetProperties()
 void SetProperties(LPDISPATCH value)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) Properties
 ```
 
@@ -524,13 +524,13 @@ End If
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString GetUserDesc()
 ```
 
 javascript
 
-```
+```javascript
 (string) UserDesc
 ```
 
@@ -549,13 +549,13 @@ javascript
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetAnchorPos(long type) ver:0x05050115
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet GetAnchorPos(number type)
 ```
 
@@ -582,7 +582,7 @@ type
 * 예제(Example)
 C++
 
-```
+```cpp
 BOOL CTestHwpCtrlDlg::OnFindMailMerge()
 {
 DHwpCtrlCode code = m_cHwpCtrl.GetHeadCtrl();
@@ -622,14 +622,14 @@ HwpCtrl 오브젝트는 한글 컨트롤의 메인 오브젝트로서 다른 오
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetCellShape()
 void SetCellShape(LPDISPATCH value)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) CellShape
 ```
 
@@ -660,14 +660,14 @@ HwpCtrl.CellShape = tp
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetCharShape()
 void SetCharShape(LPDISPATCH newvalue)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) CharShape
 ```
 
@@ -702,13 +702,13 @@ ParaShape
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetHeadCtrl()
 ```
 
 javascript
 
-```
+```javascript
 (Ctrl) HeadCtrl
 ```
 
@@ -743,13 +743,13 @@ LastCtrl
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetIsEmpty()
 ```
 
 javascript
 
-```
+```javascript
 (boolean) IsEmpty
 ```
 
@@ -765,13 +765,13 @@ javascript
 * 구문(Syntax)
 C++
 
-```
+```cpp
 short GetIsModified()
 ```
 
 javascript
 
-```
+```javascript
 (number) IsModified
 ```
 
@@ -796,13 +796,13 @@ javascript
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetLastCtrl()
 ```
 
 javascript
 
-```
+```javascript
 (Ctrl) LastCtrl
 ```
 
@@ -821,13 +821,13 @@ HeadCtrl
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetPageCount()
 ```
 
 javascript
 
-```
+```javascript
 (number) PageCount
 ```
 
@@ -844,14 +844,14 @@ javascript
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetParaShape()
 void SetParaShape(LPDISPATCH value)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) ParaShape
 ```
 
@@ -871,13 +871,13 @@ CharShape
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetParentCtrl()
 ```
 
 javascript
 
-```
+```javascript
 (Ctrl) ParentCtrl
 ```
 
@@ -904,14 +904,14 @@ End If
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString GetPath()
 void SetPath(CString value)
 ```
 
 javascript
 
-```
+```javascript
 (string) Path
 ```
 
@@ -930,14 +930,14 @@ View의 상태정보
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetViewProperties()
 void SetViewProperties(LPDISPATCH value)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) ViewProperties
 ```
 
@@ -967,13 +967,13 @@ HwpCtrl.ViewProperties = vp
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetVersion()
 ```
 
 javascript
 
-```
+```javascript
 (long) Version
 ```
 
@@ -994,7 +994,7 @@ javascript
 * 예제(Example)
 C++
 
-```
+```cpp
 long ver = m_cHwpCtrl.GetVersion();
 if (ver & 0x05000000)
 TRACE("Hwp2002 Ctrl");
@@ -1256,13 +1256,13 @@ VersionDelete, GetVersionHistoryCount, GetVersionInfo
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetCurFieldState()
 ```
 
 javascript
 
-```
+```javascript
 (long) CurFieldState
 ```
 
@@ -1290,14 +1290,14 @@ GetCurFieldName(), SetCurFieldName()
 * 구문(Syntax)
 C++
 
-```
+```cpp
 short GetSelectionMode()
 void SetSelectionMode(short value)
 ```
 
 javascript
 
-```
+```javascript
 (number) SelectionMode
 ```
 
@@ -1351,14 +1351,14 @@ End If
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetEditMode()
 void SetEditMode(long value)
 ```
 
 javascript
 
-```
+```javascript
 (long) EditMode
 ```
 
@@ -1378,7 +1378,7 @@ javascript
 * 예제(Example)
 visual C++
 
-```
+```cpp
 // 읽기전용모드로 전환한다
 m_cHwpCtrl.SetEditMode(0);
 ```
@@ -1393,14 +1393,14 @@ SetFieldViewOption
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetAutoShowHideToolBar()
 void SetAutoShowHideToolBar(BOOL value)
 ```
 
 javascript
 
-```
+```javascript
 (boolean) AutoShowHideToolBar
 ```
 
@@ -1419,14 +1419,14 @@ ShowToolBar 등을 사용하여 툴바를 만들었을 때만 효과가 있다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetEngineProperties()
 void SetEngineProperties(LPDISPATCH value)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) EngineProperties
 ```
 
@@ -1452,7 +1452,7 @@ ParameterSet의 형식은 ParameterSet/EngineProperties 참조
 * 예제(Example)
 javascript
 
-```
+```javascript
 var vSet = vHwpCtrl.CreateSet("EngineProperties");
 vSet.SetItem("CtrlMaskAs2002", 1);// 조판부호 1: 2002 모드, 0 : 2007 모드
 vSet.SetItem("ShowGuildLines", 0);// 표 투명선 1: 보이기, 0 : 안보이기
@@ -1468,14 +1468,14 @@ vHwpCtrl.EngineProperties = vSet;
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetScrollPosInfo()
 void SetScrollPosInfo(LPDISPATCH value)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) ScrollPosInfo
 ```
 
@@ -1496,7 +1496,7 @@ javascript
 * 예제(Example)
 C++
 
-```
+```cpp
 DHwpParameterSet set = m_cHwpCtrl.GetScrollPosInfo();
 VARIANT var;
 var = set.Item("HorzPos");
@@ -1519,14 +1519,14 @@ int vlp = var.intVal;
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetHyperlinkMode()ver:0x05070145
 void SetHyperlinkMode(long value)
 ```
 
 javascript
 
-```
+```javascript
 (ParameterSet) HyperlinkMode
 ```
 
@@ -1544,7 +1544,7 @@ javascript
 * 예제(Example)
 C++
 
-```
+```cpp
 // 내부 실행 모듈 (하이퍼링크 모드 설정)
 void OnHyperlingMode()
 {
@@ -1581,13 +1581,13 @@ TRACE(_T("문서내 이동"));
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetIsPreviewMode()
 ```
 
 javascript
 
-```
+```javascript
 (boolean) IsPreviewMode
 ```
 
@@ -1598,7 +1598,7 @@ javascript
 * 예제(Example)
 javascript
 
-```
+```javascript
 function PreviewClose() {
 if (pHwpCtrl.IsPreviewMode)
 pHwpCtrl.PreviewCommand(10); // 미리보기 닫기
@@ -1615,13 +1615,13 @@ PreviewCommand
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetXHwpDocuments()ver:0x07050206
 ```
 
 javascript
 
-```
+```javascript
 (XHwpDocuments) XHwpDocuments
 ```
 
@@ -1633,7 +1633,7 @@ javascript
 * 예제(Example)
 C++
 
-```
+```cpp
 // 한글 컨트롤의 문서객체를 얻어온다.
 CXHwpDucuments docs = m_cHwpCtrl.GetXHwpDocuments();
 CXHwpDocument doc = docs.get_Active_XHwpDocument();
@@ -1650,13 +1650,13 @@ CXHwpDocument doc = docs.get_Active_XHwpDocument();
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void Clear(VARIANT& option)
 ```
 
 javascript
 
-```
+```javascript
 Clear([number option])
 ```
 
@@ -1683,7 +1683,7 @@ hwpSaveIfDirty, hwpSave가 지정된 경우 현재 문서경로가 지정되어 
 * 예제(Example)
 C++
 
-```
+```cpp
 enum {
 // 문서를 Clear할 경우 다음의 옵션을 사용 가능하다.
 AskSave= 0,// 문서의 내용이 변경되었을 때 사용자에게 저장할지 묻는 대화상자를 띄운다.
@@ -1704,13 +1704,13 @@ Action 객체를 생성한다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH CreateAction(LPCTSTR actionID)
 ```
 
 javascript
 
-```
+```javascript
 Action CreateAction(string actionID)
 ```
 
@@ -1754,13 +1754,13 @@ Run
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL CreatePageImage(LPCTSTR Path, VARIANT& pgno, VARIANT& resolution, VARIANT& depth, VARIANT& format)
 ```
 
 javascript
 
-```
+```javascript
 boolean CreatePageImage(string Path, [number pgno], [number resolution], [number depth], [string format])
 ```
 
@@ -1795,13 +1795,13 @@ ParameterSet을 생성한다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH CreateSet(LPCTSTR setID)
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet CreateSet(string setID)
 ```
 
@@ -1828,13 +1828,13 @@ ParameterSet은 일종의 정보를 지니는 객체이다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL FieldExist(LPCTSTR field)
 ```
 
 javascript
 
-```
+```javascript
 boolean FieldExist(string field)
 ```
 
@@ -1858,13 +1858,13 @@ field
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString GetFieldList(VARIANT& number, VARIANT& option)
 ```
 
 javascript
 
-```
+```javascript
 string GetFieldList([number number], [number option])
 ```
 
@@ -1925,13 +1925,13 @@ FieldExist()
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString GetFieldText(LPCTSTR fieldlist)
 ```
 
 javascript
 
-```
+```javascript
 string GetFieldText(string fieldlist)
 ```
 
@@ -1969,13 +1969,13 @@ fieldlist
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL Insert(LPCTSTR path, VARIANT& format, VARIANT& arg)
 ```
 
 javascript
 
-```
+```javascript
 boolean Insert(string path, [string format], [string arg])
 ```
 
@@ -2006,13 +2006,13 @@ Open
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH InsertCtrl(LPCTSTR ctrlid, VARIANT& initparam)
 ```
 
 javascript
 
-```
+```javascript
 Ctrl InsertCtrl(string ctrlid, [ParameterSet initparam])
 ```
 
@@ -2052,13 +2052,13 @@ Set table = HwpCtrl.InsertCtrl("tbl", tbset)
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL MoveToField(LPCTSTR field, VARIANT& text, VARIANT& start, VARIANT& select)
 ```
 
 javascript
 
-```
+```javascript
 boolean MoveToField(string field, [boolean text], [boolean start], [boolean select])
 ```
 
@@ -2089,13 +2089,13 @@ select
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL Open(LPCTSTR path, VARIANT& format, VARIANT& arg)
 ```
 
 javascript
 
-```
+```javascript
 boolean Open(string path, [string format], [string arg])
 ```
 
@@ -2204,14 +2204,14 @@ kps: 북한(한글 2004) | acp : Active Codepage 현재 시스템의 코드 페�
 * 예제(Example)
 javascript
 
-```
+```javascript
 HwpControl.HwpCtrl.Open("C:/GetFieldText.hwp", "HWP");
 HwpControl.HwpCtrl.Open("C:/GetFieldText.hwp", "HWP", “versionwarning:true");
 ```
 
 C++
 
-```
+```cpp
 m_cHwpCtrl.Open(path, COleVariant(""), COleVariant("suspendpassword:true;forceopen:true"));
 ```
 
@@ -2223,13 +2223,13 @@ m_cHwpCtrl.Open(path, COleVariant(""), COleVariant("suspendpassword:true;forceop
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void PutFieldText(LPCTSTR fieldlist, LPCTSTR textlist)
 ```
 
 javascript
 
-```
+```javascript
 PutFieldText(string fieldlist, string textlist)
 ```
 
@@ -2258,13 +2258,13 @@ GetFieldText()
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void RenameField(LPCTSTR oldname, LPCTSTR newname)
 ```
 
 javascript
 
-```
+```javascript
 RenameField(string oldname, string newname)
 ```
 
@@ -2294,13 +2294,13 @@ GetFieldText(), PutFieldText()
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void Run(LPCTSTR actionID)
 ```
 
 javascript
 
-```
+```javascript
 Run(string actionID)
 ```
 
@@ -2324,13 +2324,13 @@ CreateAction
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL Save(VARIANT& save_if_dirty)
 ```
 
 javascript
 
-```
+```javascript
 boolean Save([boolean save_if_dirty])
 ```
 
@@ -2356,13 +2356,13 @@ Open, SaveAs, Path
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SaveAs(LPCTSTR Path, VARIANT& format, VARIANT& arg)
 ```
 
 javascript
 
-```
+```javascript
 boolean SaveAs(string Path, [string format], [string arg])
 ```
 
@@ -2413,13 +2413,13 @@ Open, Save, Path
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL PrintDocument()
 ```
 
 javascript
 
-```
+```javascript
 boolean PrintDocument()
 ```
 
@@ -2435,7 +2435,7 @@ boolean PrintDocument()
 * 예제(Example)
 javascript
 
-```
+```javascript
 cHwpCtrl.PrintDocument();
 ```
 
@@ -2448,13 +2448,13 @@ cHwpCtrl.PrintDocument();
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SetToolBar(long lToolBarID, VARIANT& varID)
 ```
 
 javascript
 
-```
+```javascript
 boolean SetToolBar(number lToolBarID, variant varID)
 ```
 
@@ -2692,13 +2692,13 @@ ShowToolBar, AutoShowHideToolBar, CreateAction
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL ShowToolBar(BOOL bShow)
 ```
 
 javascript
 
-```
+```javascript
 boolean ShowToolBar(boolean bShow)
 ```
 
@@ -2725,13 +2725,13 @@ SetToolBar
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH InsertPicture(LPCTSTR path, VARIANT& embedded, VARIANT& sizeoption, VARIANT& reverse, VARIANT& watermark, VARIANT& effect, VARIANT& width, VARIANT& height)
 ```
 
 javascript
 
-```
+```javascript
 Ctrl InsertPicture(string path, [boolean embedded], [number sizeoption], [boolean reverse], [boolean watermark], [number effect], [number width], [number height])ver:0x05050102
  
 boolean InsertPicture(BSTR path, [boolean embeded], [short sizeoption], [boolean reverse], [boolean watermark], [short effect], [long width], [long height])ver:0x05050100
@@ -2786,7 +2786,7 @@ height
 * 예제(Example)
 C++
 
-```
+```cpp
 CComPtr<IDispatch> pctrl;
 COleVariant oleDefault(0);
  
@@ -2823,13 +2823,13 @@ InsertBackgroundPicture
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL CreateField(LPCTSTR direction, VARIANT& memo, VARIANT& name)
 ```
 
 javascript
 
-```
+```javascript
 boolean CreateField(string direction, string memo, string name)
 ```
 
@@ -2857,13 +2857,13 @@ Client 프로그램의 특성에 따라 오동작 하는 것을 막기 위한 �
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void SetClientName(LPCTSTR szClient)
 ```
 
 javascript
 
-```
+```javascript
 SetClientName(string szClient)
 ```
 
@@ -2889,7 +2889,7 @@ PB7.0 옵션의 경우프로그램 실행도중에 Client가 바뀌는 일은 �
 * 예제(Example)
 C++
 
-```
+```cpp
 void CHwpCtrlEx::InitControl()
 {
 #ifdef _DEBUG
@@ -2909,13 +2909,13 @@ _LockCommands();
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL MovePos(VARIANT& moveID, VARIANT& para, VARIANT& pos)
 ```
 
 javascript
 
-```
+```javascript
 boolean MovePos([number moveID], [number para], [number pos])
 ```
 
@@ -2992,13 +2992,13 @@ moveScanPos는 문서를 검색하는 중 캐럿을 이동시키려 할 경우�
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SelectText(long spara, long spos, long epara, long epos)
 ```
 
 javascript
 
-```
+```javascript
 boolean SelectText(number spara, number spos, number epara, number epos)
 ```
 
@@ -3030,13 +3030,13 @@ GetPos, GetPosBySet, GetSelectedPos, GetSelectedPosBySet
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString GetCurFieldName(VARIANT& option)
 ```
 
 javascript
 
-```
+```javascript
 string GetCurFieldName([number option])
 ```
 
@@ -3070,13 +3070,13 @@ GetFieldList, SetCurFieldName, CurFeildState
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SetCurFieldName(LPCTSTR fieldname, VARIANT& option, VARIANT& direction, VARIANT& memo)
 ```
 
 javascript
 
-```
+```javascript
 boolean SetCurFieldName(string fieldname, [number option], [string direction], [string memo])
 ```
 
@@ -3116,13 +3116,13 @@ GetFieldList, GetCurFieldName, CurFieldState
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL DeleteCtrl(LPDISPATCH ctrl)
 ```
 
 javascript
 
-```
+```javascript
 boolean DeleteCtrl(Ctrl ctrl)
 ```
 
@@ -3147,13 +3147,13 @@ InsertCtrl
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL InitScan(VARIANT& option, VARIANT& range, VARIANT& spara, VARIANT& spos, VARIANT& epara, VARIANT& epos)
 ```
 
 javascript
 
-```
+```javascript
 boolean InitScan([number option], [number range], [number spara], [number spos], [number epara], [numbar epos])
 ```
 
@@ -3226,7 +3226,7 @@ GetText, ReleaseScan
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetText(BSTR * text)
 ```
 
@@ -3268,13 +3268,13 @@ InitScan()으로 설정된 초기화 정보를 해제한다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void ReleaseScan()
 ```
 
 javascript
 
-```
+```javascript
 ReleaseScan()
 ```
 
@@ -3297,13 +3297,13 @@ InitScan, GetText
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void LockCommand(LPCTSTR actionID, BOOL lock)
 ```
 
 javascript
 
-```
+```javascript
 LockCommand(string actionID, boolean lock)
 ```
 
@@ -3322,7 +3322,7 @@ Action을 잠근다. 잠긴 Action은 툴바 및 메뉴에서 비활성화 되�
 * 예제(Example)
 C++
 
-```
+```cpp
 HwpCtrl.LockCommand("Print", TRUE);
 HwpCtrl.LockCommand("Undo", FALSE);
 ```
@@ -3337,13 +3337,13 @@ IsCommandLock
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL IsCommandLock(LPCTSTR actionID)
 ```
 
 javascript
 
-```
+```javascript
 boolean IsCommandLock(string actionID)
 ```
 
@@ -3369,7 +3369,7 @@ LockCommand
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetFilterList(BSTR * szfilterlist, VARIANT& flags)
 ```
 
@@ -3394,7 +3394,7 @@ BSTR값으로 필터 리스트가 넘어오나 내부적으로 Cstring값을 사
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void GetPos(long * list, long * para, long * pos)
 ```
 
@@ -3426,13 +3426,13 @@ SetPos, SelectText, GetPosBySet, SetPosBySet
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SetPos(long list, long para, long pos)
 ```
 
 javascript
 
-```
+```javascript
 boolean SetPos(number list, number para, number pos)
 ```
 
@@ -3462,7 +3462,7 @@ GetPos, SelectText, SetPosBySet, GetPosBySet
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL KeyIndicator(long * seccnt, long * secno, long * prnpageno, long * colno, long * line, long * pos, short * over, BSTR * ctrlname)
 ```
 
@@ -3495,7 +3495,7 @@ ctrlname
 * 예제(Example)
 C++
 
-```
+```cpp
 // idle time에 UI를 업데이트한다.
 // 이함수는 App이 호출한다.
 void CMainFrame::OnIdleUpdateUI()
@@ -3543,7 +3543,7 @@ Action의 UI상태를 얻어온다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetActionCmdUIStatus(LPCTSTR actid, long bWithKey, long * bEnabled, long * bChecked, long * bRadio, BSTR * szText)ver:0x05050101
  
 BOOL GetActionCmdUIStatus(LPCTSTR actid, BOOL bWithKey, BOOL * bEnabled, short * bChecked, BOOL * bRadio, BSTR * szText)ver:0x05050100
@@ -3575,7 +3575,7 @@ szText
 * 예제(Example)
 C++
 
-```
+```cpp
 void CMainFrame::OnUpdateMenuitemTest1(CCmdUI* pCmdUI)
 {
 LPCTSTR szActionName;
@@ -3609,13 +3609,13 @@ _ASSERTE(!_T("GetActionCmdUIStatus로 처리할 수 없는 잘못된 ID"));
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long ModifyFieldProperties(LPCTSTR field, long remove, long add)ver:0x05050101
 ```
 
 javascript
 
-```
+```javascript
 number ModifyFieldProperties(string field, number remove, number add)
 ```
 
@@ -3658,7 +3658,7 @@ remove와 add에 둘 다 0이 입력되면 현재 속성을 돌려준다.
 * 예제(Example)
 C++
 
-```
+```cpp
 long ret;
 ret = m_cHwpCtrl.ModifyFieldProperties(_T("test"), 0, 0);
 if (ret < 0 )
@@ -3698,13 +3698,13 @@ AfxMessageBox(_T("양식모드에서 편집 불가능하도록 변경되었습�
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetPosBySet()ver:0x05050104
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet GetPosBySet()
 ```
 
@@ -3720,7 +3720,7 @@ ParameterSet GetPosBySet()
 * 예제(Example)
 javascript
 
-```
+```javascript
 var lpp;
 function GetPosTest()
 {
@@ -3754,13 +3754,13 @@ GetPos, SetPos, SetPosBySet
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SetPosBySet(LPDISPATCH pos) ver:0x05050104
 ```
 
 javascript
 
-```
+```javascript
 boolean SetPosBySet(ParameterSet pos)
 ```
 
@@ -3777,7 +3777,7 @@ Pos
 * 예제(Example)
 javascript
 
-```
+```javascript
 var lpp;
 function GetPosTest()
 {
@@ -3811,13 +3811,13 @@ SetPos, GetPos, GetPosBySet
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetTextBySet(LPDISPATCH text)ver:0x05050104
 ```
 
 javascript
 
-```
+```javascript
 number GetTextBySet(ParameterSet text)
 ```
 
@@ -3850,7 +3850,7 @@ GetTextBySet()의 사용이 끝나면 ReleaseScan()을 반드시 호출하여 �
 * 예제(Example)
 javascript
 
-```
+```javascript
 function GetTextTest()
 {
 var text;
@@ -3873,14 +3873,14 @@ GetText, InitScan, ReleaseScan
 * 구문(Syntax)
 C++
 
-```
+```cpp
 VARIANT InsertBackgroundPicture(LPCTSTR bordertype, LPCTSTR Path, VARIANT& embedded, VARIANT& filloption, VARIANT& watermark, VARIANT& effect, VARIANT& brightness, VARIANT& contrast)
 ver:0x05050106
 ```
 
 javascript
 
-```
+```javascript
 variant InsertBackgroundPicture(string bordertype, string path, [boolean embedded], [number filloption], [boolean watermark], [number effect], [number brightness], [number contrast]);
 ```
 
@@ -3953,7 +3953,7 @@ CellBorderFill의 SetItem 중 FillAttr 의 SetItem FileName 에 이미지의 bin
 * 예제(Example)
 C++
 
-```
+```cpp
 #define OLELONG(X) (COleVariant)(long)(X)
 void CHwpXCtrlFrameView::OnMenuitemSetCellBgImg()
 {
@@ -3963,7 +3963,7 @@ m_cHwpCtrl.InsertBackgroundPicture("SelectedCell", "test.bmp", OLELONG(1), OLELO
 
 javascript
 
-```
+```javascript
 function InsertBgImg()
 {
 HwpControl.HwpCtrl.InsertBackgroundPicture("SelectedCell", BasePath+"test.bmp",1,5,0,0,0,0);
@@ -4021,13 +4021,13 @@ InsertPicture
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long SetFieldViewOption(long option)ver:0x05050108
 ```
 
 javascript
 
-```
+```javascript
 number SetFieldViewOption(number option)
 ```
 
@@ -4055,7 +4055,7 @@ EditMode와 비슷하게 현재 열려있는 문서에 대한 속성이다. 따�
 * 예제(Example)
 javascript
 
-```
+```javascript
 function OnStart()
 {
 HwpControl.HwpCtrl.SetClientName("DEBUG"); //For debug message
@@ -4075,13 +4075,13 @@ EditMode
 * 구문(Syntax)
 C++
 
-```
+```cpp
 VARIANT GetTextFile(LPCTSTR format, LPCTSTR option)ver:0x05050109
 ```
 
 javascript
 
-```
+```javascript
 string GetTextFile(string format, string option)
 ```
 
@@ -4120,7 +4120,7 @@ disk를 접근할 수 있다면, Save나 SaveBlockAction을 사용하십시오.
 * 예제(Example)
 javascript
 
-```
+```javascript
 var data
 function GetTextFile()
 {
@@ -4139,13 +4139,13 @@ SetTextFile
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long SetTextFile(VARIANT& data, LPCTSTR format, LPCTSTR option)ver:0x05050109
 ```
 
 javascript
 
-```
+```javascript
 number SetTextFile(string data, string format, string option)
 ```
 
@@ -4186,7 +4186,7 @@ disk를 접근할 수 있다면, Open이나 Insert를 사용하십시오.
 * 예제(Example)
 javascript
 
-```
+```javascript
 function SetTextFile()
 {
 HwpControl.HwpCtrl.SetTextFile("HWP", HwpControl.format.value, "");
@@ -4203,13 +4203,13 @@ GetTextFile
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetMousePos(long Xrelto, long Yrelto)ver:0x05050111
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet GetMousePos(number Xrelto, number Yrelto)
 ```
 
@@ -4258,7 +4258,7 @@ Y좌표계의 기준 위치
 * 예제(Example)
 javascript
 
-```
+```javascript
 function HwpCtrl_OnMouseLButtonDown(x,y)
 {
 var MousePosSet = pHwpCtrl.GetMousePos(0, 0); // 쪽기준
@@ -4287,13 +4287,13 @@ HwpControl.paper_mousey_mm.value = Math.floor(papery / 283.465);
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL ShowStatusBar(long Show)ver:0x05050115
 ```
 
 javascript
 
-```
+```javascript
 boolean ShowStatusBar(number Show)
 ```
 
@@ -4319,13 +4319,13 @@ ShowToolBar
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetFileInfo(LPCTSTR FileName)ver:0x05050116
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet GetFileInfo(string FileName)
 ```
 
@@ -4353,7 +4353,7 @@ FileName
 * 예제(Example)
 C++
 
-```
+```cpp
 DHwpParameterSet dFileInfoSet = pHwpCtrl->GetFileInfo(strFileName);
 TRACE(_T("---File Information: %s\n"), strFileName);
 TRACE(_T("Format : %s\n"), (CString)(dFileInfoSet.Item(_T("Format")).bstrVal));
@@ -4372,13 +4372,13 @@ TRACE(_T("---File Information End\n"));
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString SaveState(LPCTSTR FileName)ver:0x05050118
 ```
 
 javascript
 
-```
+```javascript
 string SaveState(string FileName)
 ```
 
@@ -4397,7 +4397,7 @@ FileName이 세자 이상일 때만, 파일로 저장한다. 세자 미만일 �
 * 예제(Example)
 javascript
 
-```
+```javascript
 function LoadStateByFilePath()
 {
 pHwpCtrl.LoadState(BasePath + "PROFILE2.INI");
@@ -4440,13 +4440,13 @@ LoadState
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL LoadState(LPCTSTR FileName)ver:0x05050118
 ```
 
 javascript
 
-```
+```javascript
 boolean LoadState(string FileName)
 ```
 
@@ -4466,7 +4466,7 @@ Profile에 없는 항목에 대해서는 현재 상태를 유지하는 것을 �
 * 예제(Example)
 javascript
 
-```
+```javascript
 function SaveStateFile()
 {
 pHwpCtrl.SaveState("PROFILE2.INI");
@@ -4488,13 +4488,13 @@ SaveState
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL ReplaceAction(LPCTSTR OldActionID, LPCTSTR NewActionID)ver:0x05050118
 ```
 
 javascript
 
-```
+```javascript
 boolean ReplaceAction(string OldActionID, string NewActionID)
 ```
 
@@ -4560,7 +4560,7 @@ HwpCtrl.ReplaceAction("FileOpen", myFileOpen);
 * 예제(Example)
 javascript
 
-```
+```javascript
 var bFrameActionEnabled = false;
 function FrameActionEnabled()
 {
@@ -4598,13 +4598,13 @@ alert("Frame Action Enabled");
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetMessageSet()ver:0x05070125
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet GetMessageSet()
 ```
 
@@ -4628,13 +4628,13 @@ HyperlinkMode, NotifyMessage
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetViewStatus(long nType)ver:0x05070129
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet GetViewStatus(number nType)
 ```
 
@@ -4661,7 +4661,7 @@ view의 상태정보를 지는 ParameterSet
 * 예제(Example)
 C++
 
-```
+```cpp
 LONG lHwpViewLeft = 0; //한글 전체 페이지에 대하여 현재 보이는 뷰의Left 좌표
 LONG lHwpViewTop = 0; //한글 전체 페이지에 대하여 현재 보이는 뷰의Top 좌표
 DHwpParameterSet set = m_ctrlHwp.GetViewStatus(0);
@@ -4683,13 +4683,13 @@ lHwpViewLeft, lHwpViewTop);
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL RegisterModule(LPCTSTR ModuleType, VARIANT& ModuleData)ver:0x05070130
 ```
 
 javascript
 
-```
+```javascript
 boolean RegisterModule(string ModuleType, variant ModuleData)
 ```
 
@@ -4882,13 +4882,13 @@ pHwpCtrl.RegisterModule("FilePathCheckHandle", 132); // 132 = 임의 ID 사용�
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL MoveToFieldEx(LPCTSTR field, VARIANT& text, VARIANT& start, VARIANT& select)
 ```
 
 javascript
 
-```
+```javascript
 boolean MoveToFieldEx(string field, [boolean text], [boolean start], [boolean select])
 ```
 
@@ -4920,13 +4920,13 @@ MoveToField
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SetAutoSave(LPCTSTR FileName, long saveinterval)verL0x0507013C, 0x06000107
 ```
 
 javascript
 
-```
+```javascript
 boolean SetAutoSave(string FileName, number saveinterval)
 ```
 
@@ -4969,7 +4969,7 @@ SetAutoSave는 파일 이름으로 지정된 자동저장 파일을 찾아서 �
 * 예제(Example)
 javascript
 
-```
+```javascript
 function OnStart()
 {
 // 컨트롤이 초기화 될 때 자동저장을 설정할 수 있다.
@@ -5001,13 +5001,13 @@ pHwpCtrl.SetAutoSave("", 0);
 * 구문(Syntax)
 C++
 
-```
+```cpp
 VARIANT GetFormObjectAttr(LPCTSTR formname, LPCTSTR attrname)ver:0x0605010A
 ```
 
 javascript
 
-```
+```javascript
 variant GetFormObjectAttr(string formname, string attrname)
 ```
 
@@ -5119,13 +5119,13 @@ SetFormObjectAttr
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL SetFormObjectAttr(LPCTSTR formname, LPCTSTR attrname, VARIANT& value)ver:0x0605010A
 ```
 
 javascript
 
-```
+```javascript
 boolean SetFormObjectAttr(string formname, string attrname, variant value)
 ```
 
@@ -5147,7 +5147,7 @@ GetFormObjectAttr함수의 Remark를 참조
 * 예제(Example)
 javascript
 
-```
+```javascript
 var length;
  
 length = 20;
@@ -5171,13 +5171,13 @@ GetFormObjectAttr
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL PreviewCommand(long previewmode)ver:0x0600010B, 0x0605010B
 ```
 
 javascript
 
-```
+```javascript
 boolean PreviewCommand(number previewmode)
 ```
 
@@ -5231,7 +5231,7 @@ previewmode
 * 예제(Example)
 javascript
 
-```
+```javascript
 function PreviewClose{
 if (pHwpCtrl.IsPreviewMode)
 pHwpCtrl.PreviewCommand(10);// 미리보기 닫기
@@ -5248,7 +5248,7 @@ IsPreviewMode
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetSelectedPos(long * slist, long * spara, long * spos, long * elist, long * epara, long * epos)
 ver:0x06050110
 ```
@@ -5280,7 +5280,7 @@ epos
 * 예제(Example)
 C++
 
-```
+```cpp
 long slist, spara, spos;
 long elist, epara, epos;
 m_cHwpCtrl.GetSelectedPos(&slist, &spara, &spos, &elist, &epara, &epos);
@@ -5296,13 +5296,13 @@ GetSelectedPosBySet, SelectText
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetSelectedPosBySet(LPDISPATCH sset, LPDISPATCH eset)ver:0x06050110
 ```
 
 javascript
 
-```
+```javascript
 boolean GetSelectedPosBySet(ParameterSet sset, ParameterSet eset)
 ```
 
@@ -5321,7 +5321,7 @@ eset
 * 예제(Example)
 javascript
 
-```
+```javascript
 function {
 var sset, eset;
 sset = pHwpCtrl.CreateSet("ListParaPos");
@@ -5350,13 +5350,13 @@ epos = eset.Item("Pos");
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetTableCellAddr(long type)ver:0x06070113
 ```
 
 javascript
 
-```
+```javascript
 number GetTableCellAddr(number type)
 ```
 
@@ -5394,7 +5394,7 @@ type
 * 예제(Example)
 javascript
 
-```
+```javascript
 function {
 var col = pHwpCtrl.GetTableCellAddr(0);
 var row = pHwpCtrl.GetTableCellAddr(1);
@@ -5410,14 +5410,14 @@ var row = pHwpCtrl.GetTableCellAddr(1);
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL VersionSave(LPWSTR filepath, BOOL overwrite, BOOL infolock, VARIANT& writer, VARIANT& description)
 ver:0x06070115
 ```
 
 javascript
 
-```
+```javascript
 boolean VersionSave(string filepath, boolean overwrite boolean infolock, variant writer, variant description)
 ```
 
@@ -5444,7 +5444,7 @@ description
 * 예제(Example)
 javascript
 
-```
+```javascript
 pHwpCtrl.VersionSave("C:\\work\\ver.hwp", 0, 0, "abc", "new");
 pHwpCtrl.VersionSave("C:\\work\\ver.hwp", 1, 0, "xyz", "overwrite");
 ```
@@ -5459,13 +5459,13 @@ VersionDelete, GetVersionHistoryCount, GetVersionInfo
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL VersionDelete(long index)ver:0x06070115
 ```
 
 javascript
 
-```
+```javascript
 boolean VersionDelete(number index)
 ```
 
@@ -5484,7 +5484,7 @@ index
 * 예제(Example)
 javascript
 
-```
+```javascript
 pHwpCtrl.VersionDelete(0);
 ```
 
@@ -5498,13 +5498,13 @@ VersionSave, GetVersionHistoryCount, GetVersionInfo
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH MakeVersionDiffAll(VARIANT& filepath)ver:0x06070115
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet MakeVersionDiffAll(variant filepath)
 ```
 
@@ -5540,9 +5540,9 @@ VersionInfo ParameterSet을 반환한다.
 * 설명(Remarks)
  
 * 예제(Example)
-javaScript
+javascript
 
-```
+```javascript
 var set = pHwpCtrl.MakeVersionDiffAll("");
 var array = set.Item("TempFilePath");
 ```
@@ -5557,13 +5557,13 @@ VersionSave, VersionDelete, GetVersionHistoryCount, GetVersionInfo
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH GetVersionInfo(long index)ver:0x06070115
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet GetVersionInfo(number index)
 ```
 
@@ -5601,7 +5601,7 @@ VersionInfo의 ParameterSet을 반환한다.
 * 예제(Example)
 javascript
 
-```
+```javascript
 var set = pHwpCtrl.GetVersionInfo(0);
 var str = set.Item("ItemInfoWriter");
 var desc = set.Item("ItemSaveDescription");
@@ -5617,13 +5617,13 @@ MakeVersionDiffAll, GetVersionHistoryCount, VersionSave, VersionDelete
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetVersionHistoryCount()ver:0x06070115
 ```
 
 javascript
 
-```
+```javascript
 number GetVersionHistoryCount()
 ```
 
@@ -5638,7 +5638,7 @@ number GetVersionHistoryCount()
 * 예제(Example)
 javascript
 
-```
+```javascript
 var count = pHwpCtrl.GetVersionHistoryCount();
 ```
 
@@ -5652,13 +5652,13 @@ GetVersionInfo
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString GetScriptSource(LPCTSTR filepath)
 ```
 
 javascript
 
-```
+```javascript
 string GetScriptSource(string filepath)
 ```
 
@@ -5675,7 +5675,7 @@ script source code.
 * 예제(Example)
 javascript
 
-```
+```javascript
 <HTML>
 <BODY>
 <FORM name = "HwpControl">
@@ -5708,13 +5708,13 @@ RunScriptMacro
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL RunScriptMacro(LPSTR FunctionName, long uMacroType, long uScriptType)
 ```
 
 javascript
 
-```
+```javascript
 boolean RunScriptMacro(string FunctionName, number uMacroType, number uScriptType)
 ```
 
@@ -5745,7 +5745,7 @@ uScriptType
 * 예제(Example)
 javascript
 
-```
+```javascript
 <SCRIPT language="javascript">
  
 // Document Macro 실행 예제
@@ -5774,13 +5774,13 @@ GetScriptSource
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL InsertMenu(LPCTSTR menuidx, LPCTSTR menustr, LPCTSTR actionstr, long menutype)ver:0x07050206
 ```
 
 javascript
 
-```
+```javascript
 boolean InsertMenu(string menuidx, string menustr, string actionstr, long menutype)
 ```
 
@@ -5866,7 +5866,7 @@ text로 들어가는 문자열에 '&'를 넣어주면 Alt키로 조합되는 단
 * 예제(Example)
 C++
 
-```
+```cpp
 // 한글이 실행될 때
 BOOL OnLoad(CDHwpCtrl& rHwpCtrl)
 {
@@ -5906,13 +5906,13 @@ RemoveMenu
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long RemoveMenu(LPCTSTR menuidx, long menutype) ver:0x07050206
 ```
 
 javascript
 
-```
+```javascript
 number RemoveMenu(string menuidx, number menutype)
 ```
 
@@ -5946,7 +5946,7 @@ menutype의 값이 1일 경우에는 메뉴의 위치를 기준으로 제거한�
 * 예제(Example)
 javascript
 
-```
+```javascript
 pHwpCtrl.RemoveMenu("Print", 0);// 인쇄메뉴를 삭제한다.
 pHwpCtrl.RemoveMenu("0:3", 0);// 첫번째 popup메뉴의 third메뉴를 삭제한다.
 ```
@@ -5966,13 +5966,13 @@ NotifyMessage 발생을 알린다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void NotifyMessage(BSTR Msg, long WParam, long LParam)
 ```
 
 javascript
 
-```
+```javascript
 NotifyMessage(string Msg, number WParam, number LParam)
 ```
 
@@ -6001,7 +6001,7 @@ Win32의 Message와 비슷한 개념으로 생각하면 된다.
 * 예제(Example)
 C++
 
-```
+```cpp
 OnNotifyMessageHwpctrl(LPCTSTR Msg, long WParam, long LParam)
 {
 // TODO: Add your control notification handler code here
@@ -6030,13 +6030,13 @@ AfxMessageBox(msg);
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void OnMouseLButtonDown(long x, long y)ver:0x05050111
 ```
 
 javascript
 
-```
+```javascript
 OnMouseLButtonDown(number x, number y)
 ```
 
@@ -6205,13 +6205,13 @@ GetMousePos
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetCount()
 ```
 
 javascript
 
-```
+```javascript
 (number) Count
 ```
 
@@ -6228,13 +6228,13 @@ parameter set인지 여부를 나타낸다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetIsSet()
 ```
 
 javascript
 
-```
+```javascript
 (boolean) IsSet
 ```
 
@@ -6253,13 +6253,13 @@ parameter set의 ID를 나타낸다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 CString Getsetid()
 ```
 
 javascript
 
-```
+```javascript
 (string) SetID
 ```
 
@@ -6279,13 +6279,13 @@ Set ID는 별도 문서를 참조한다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH Clone()
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet Clone()
 ```
 
@@ -6307,13 +6307,13 @@ ParmeterSet Object.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH CreateItemArray(LPCTSTR itemid, long Count)
 ```
 
 javascript
 
-```
+```javascript
 ParameterArray CreateSet(string itemid, number Count)
 ```
 
@@ -6363,13 +6363,13 @@ act.Execute(set);
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH CreateItemSet(LPCTSTR itemid, LPCTSTR setid)
 ```
 
 javascript
 
-```
+```javascript
 ParameterSet CreateSet(string itemid, string setid)
 ```
 
@@ -6416,13 +6416,13 @@ act.Execute(set)
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void GetIntersection(LPDISPATCH srcset)
 ```
 
 javascript
 
-```
+```javascript
 GetIntersection(ParameterSet srcset)
 ```
 
@@ -6446,13 +6446,13 @@ intersection에 사용할 원본 set
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL IsEquivalent(LPDISPATCH srcset)
 ```
 
 javascript
 
-```
+```javascript
 boolean IsEquivalent(ParameterSet srcset)
 ```
 
@@ -6477,13 +6477,13 @@ srcset
 * 구문(Syntax)
 C++
 
-```
+```cpp
 VARIANT Item(LPCTSTR itemid)
 ```
 
 javascript
 
-```
+```javascript
 variant Item(string itemid)
 ```
 
@@ -6508,13 +6508,13 @@ itemid
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL ItemExist(LPCTSTR itemid)
 ```
 
 javascript
 
-```
+```javascript
 boolean ItemExist(string itemid)
 ```
 
@@ -6538,13 +6538,13 @@ itemid
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void Merge(LPDISPATCH srcset)
 ```
 
 javascript
 
-```
+```javascript
 Merge(ParameterSet srcset)
 ```
 
@@ -6568,13 +6568,13 @@ parameter set을 초기화한다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void RemoveAll(LPCTSTR setid)
 ```
 
 javascript
 
-```
+```javascript
 RemoveAll(string setid)
 ```
 
@@ -6598,13 +6598,13 @@ setid
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void RemoveItem(LPCTSTR itemid)
 ```
 
 javascript
 
-```
+```javascript
 RemoveItem(string itemid)
 ```
 
@@ -6627,13 +6627,13 @@ itemid
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void SetItem(LPCTSTR itemid, VARIANT& value)
 ```
 
 javascript
 
-```
+```javascript
 SetItem(string itemid, variant value)
 ```
 
@@ -6664,14 +6664,14 @@ parameter set의 아이템으로 배열을 표현하는 데 사용된다. 일반
 * 구문(Syntax)
 C++
 
-```
+```cpp
 long GetCount()
 void SetCount(long value)
 ```
 
 javascript
 
-```
+```javascript
 (number) Count
 ```
 
@@ -6689,13 +6689,13 @@ parameter set인지 여부를 나타낸다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 BOOL GetIsSet()
 ```
 
 javascript
 
-```
+```javascript
 (boolean) IsSet
 ```
 
@@ -6715,13 +6715,13 @@ javascript
 * 구문(Syntax)
 C++
 
-```
+```cpp
 LPDISPATCH Clone()
 ```
 
 javascript
 
-```
+```javascript
 ParameterArray Clone()
 ```
 
@@ -6742,13 +6742,13 @@ ParameterArray Clone()
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void Copy(LPDISPATCH srcarray)
 ```
 
 javascript
 
-```
+```javascript
 Copy(ParameterArray srcarray)
 ```
 
@@ -6772,13 +6772,13 @@ srcarray의 내용이 그대로 현재 ParameterArray로 복사된다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 VARIANT Item(long index)
 ```
 
 javascript
 
-```
+```javascript
 variant Item(number index)
 ```
 
@@ -6802,13 +6802,13 @@ index의 위치에 존재하는 item이 반환된다.
 * 구문(Syntax)
 C++
 
-```
+```cpp
 void SetItem(long index, VARIANT& value)
 ```
 
 javascript
 
-```
+```javascript
 SetItem(number index, variant value)
 ```
 
