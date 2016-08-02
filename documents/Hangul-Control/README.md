@@ -151,7 +151,7 @@ HwpCtrl API 파일에는 한글 컨트롤에서 사용되는 주요 객체를 �
 
 ## 각 언어별 한글 컨트롤 활용법
 ### C#을 이용한 한글 컨트롤 활용(Visual Studio 2008)
-* 원본 hwp파일 [20130614-한글컨트롤 C#.hwp](non-textbase-documents/20130614-한글컨트롤 C#.hwp)
+* 원본 hwp파일 [20130614-한글컨트롤 C#.hwp](non-textbase-documents/20130614-%ED%95%9C%EA%B8%80%EC%BB%A8%ED%8A%B8%EB%A1%A4%20C%23.hwp)
 
 1. 새 프로젝트를 만든다.
   - **Windows Forms 응용 프로그램**을 선택
