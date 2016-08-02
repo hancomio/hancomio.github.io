@@ -387,7 +387,7 @@ javascript
 * 예제(Example)
 Visual Basic
 
-```
+```vb
 '문서 중의 각주를 카운트
 Dim ctrlcode As CtrlCode
 cnt = 0
