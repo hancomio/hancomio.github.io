@@ -48,8 +48,10 @@
   * onSaveDocument()
 
 #### Extract sequence
+![Extract Sequence](images/service-1.png)
 
 #### Export sequence
+![Export sequence](images/service-2.png)
 
 #### 전달 구성 및 환경-1
 * B2B Service-release-3rd party.pdf
