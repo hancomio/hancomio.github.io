@@ -385,7 +385,7 @@ javascript
 ※ Initialization Set : HwpCtrl.InsertCtrl에 지정할 수 있는 initparam의 parameter set ID
  
 * 예제(Example)
-Visual Basic
+visual basic
 
 ```vb
 '문서 중의 각주를 카운트
@@ -501,9 +501,9 @@ javascript
 모든 컨트롤은 대응하는 parameter set으로 속성을 읽고 쓸 수 있다.
  
 * 예제(Example)
-Visual Basic
+visual basic
 
-```
+```vb
 '현재 캐럿이 위치한 표의 셀 간격을 1pt로 설정한다.
 Dim ctrlcode As CtrlCode
 Dim tbset As ParameterSet
@@ -682,7 +682,7 @@ ParameterSet의 형식은 ParameterSet/CharShape 참조.
 * 예제(Example)
 visual basic
 
-```
+```vb
 ' selection 내의 글자 크기가 모두 동일할 때만 20pt로 설정한다. (Visual Basic version)
 Dim cs As ParameterSet
 Set cs = HwpCtrl.CharShape
@@ -719,7 +719,7 @@ javascript
 * 예제(Example)
 visual basic
 
-```
+```vb
 ' 문서중의 모든 표를 삭제
 Dim ctrl As ctrl
 Dim nxtctrl As ctrl
@@ -889,7 +889,7 @@ javascript
 * 예제(Example)
 visual basic
 
-```
+```vb
 If HwpCtrl.ParentCtrl Is Nothing Then
 ... 본문 내 위치
 End If
@@ -949,7 +949,7 @@ ParameterSet의 형식은 ParameterSet/ViewProperties 참조.
 * 예제(Example)
 visual basic
 
-```
+```vb
 '화면 확대 비율을 100%로 맞춘다.
 Dim vp As ParameterSet
 Set vp = HwpCtrl.CreateSet("ViewProperties")
@@ -1311,7 +1311,7 @@ HWPSEL_STRICT_MODE ( = 0x10, 십진수 16)으로 OR 마스크되어 오기 때�
 * 예제(Example)
 visual basic
 
-```
+```vb
 Dim mode As Integer
  
 Const HWPSEL_NONE = 0
@@ -1728,7 +1728,7 @@ Action object
 * 예제(Example)
 visual basic
 
-```
+```vb
 '사용자에게 글자모양 대화상자를 띄우고 그 결과에서 글자크기를 제외한 항목만 적용한다.
 Dim ac As Action
 Dim cs As ParameterSet
@@ -2033,7 +2033,7 @@ initparam에는 컨트롤의 초기 속성을 지정한다. 대부분의 컨트�
 * 예제(Example)
 visual basic
 
-```
+```vb
 ' 5x5 크기의 표를 삽입한다.
 Dim tbset As ParameterSet
 Dim table As ctrl
@@ -2624,7 +2624,7 @@ lToolBarID는 제어할 툴바의 ID를 varID는 수행되어야 할 동작을 �
 * 예제(Example)
 visual basic
 
-```
+```vb
 <SCRIPT language="javascript">
 // 툴바 customize
 function InitToolBarJS()
@@ -6387,9 +6387,9 @@ setid
 ParameterSet 내부에 아이템으로 또 다른 ParameterSet을 가지는 서브셋의 개념이다.
  
 * 예제(Example)
-Visual Basic
+visual basic
 
-```
+```vb
 Set act = ACTIVEXHWP.CreateAction("PageSetup")
 Set set = act.CreateSet()
 Set pset = set.CreateItemSet("PageDef","PageDef")
