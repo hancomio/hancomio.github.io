@@ -1,5 +1,5 @@
 # 한글컨트롤 프로그래밍 이해와 활용
-* 원본 hwp파일 [20130614-한글컨트롤 프로그래밍 이해와 활용.hwp](non-textbase-documents/20130614-한글컨트롤 프로그래밍 이해와 활용.hwp)
+* 원본 hwp파일 [20130614-한글컨트롤 프로그래밍 이해와 활용.hwp](non-textbase-documents/20130614-한글2010-한글컨트롤 프로그래밍 이해와 활용.hwp)
 
 ## 한글 컨트롤이란?
 
@@ -151,7 +151,7 @@ HwpCtrl API 파일에는 한글 컨트롤에서 사용되는 주요 객체를 �
 
 ## 각 언어별 한글 컨트롤 활용법
 ### C#을 이용한 한글 컨트롤 활용(Visual Studio 2008)
-* 원본 hwp파일 [20130614-한글컨트롤 C#.hwp](non-textbase-documents/20130614-%ED%95%9C%EA%B8%80%EC%BB%A8%ED%8A%B8%EB%A1%A4%20C%23.hwp)
+* 원본 hwp파일 [20130614-한글컨트롤 C#.hwp](non-textbase-documents/20130614-%ED%95%9C%EA%B8%802010-%ED%95%9C%EA%B8%80%EC%BB%A8%ED%8A%B8%EB%A1%A4%20C%23.hwp)
 
 1. 새 프로젝트를 만든다.
   - **Windows Forms 응용 프로그램**을 선택
@@ -192,13 +192,13 @@ HwpCtrl API 파일에는 한글 컨트롤에서 사용되는 주요 객체를 �
 
 
 ### VB를 이용한 한글 컨트롤 활용
-* 원본 hwp파일 [20130614-한글컨트롤 VB.hwp](non-textbase-documents/20130614-한글컨트롤 VB.hwp)
+* 원본 hwp파일 [20130614-한글컨트롤 VB.hwp](non-textbase-documents/20130614-한글2010-한글컨트롤 VB.hwp)
 * **hwp 파일을 markdown으로 옮기는 작업이 필요합니다.**
 
 ### MFC를 이용한 한글 컨트롤 활용
-* 원본 hwp파일 [20130614-한글컨트롤 MFC.hwp](non-textbase-documents/20130614-한글컨트롤 MFC.hwp)
+* 원본 hwp파일 [20130614-한글컨트롤 MFC.hwp](non-textbase-documents/20130614-한글2010-한글컨트롤 MFC.hwp)
 * **hwp 파일을 markdown으로 옮기는 작업이 필요합니다.**
 
 ### JavaScript를 이용한 한글 컨트롤 활용
-* 원본 hwp파일 [20130614-한글컨트롤 자바스크립트.hwp](non-textbase-documents/20130614-한글컨트롤 자바스크립트.hwp)
+* 원본 hwp파일 [20130614-한글컨트롤 자바스크립트.hwp](non-textbase-documents/20130614-한글2010-한글컨트롤 자바스크립트.hwp)
 * **hwp 파일을 markdown으로 옮기는 작업이 필요합니다.**
