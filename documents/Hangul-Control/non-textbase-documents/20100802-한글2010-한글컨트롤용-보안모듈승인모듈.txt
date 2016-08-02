@@ -1,0 +1,21 @@
+◎ 첨부파일(보안모듈(HwpCtrl).zip)을 다운받으시고 압축을 해제 하시기 바랍니다.
+
+    구성물은 다음과 같습니다.
+
+
+   1. 보안모듈 소스
+
+   2. 보안모듈(FilePathCeckerModuleExample.dll)
+
+   3. 보안모듈 등록위치(레지스트리.JPG)
+
+
+
+   보안모듈을 특정위치에 설치하신 후, 레지스트리.JPG의 내용처럼, 보안모듈의 이름과 풀패스를 레지스트리 등록하신 뒤
+   사용하시기 바랍니다.
+
+   HwpCtrl.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
+
+   RegisterModule()의 자세한 설명은 매뉴얼을 참고하시기 바랍니다.
+
+   감사합니다.
