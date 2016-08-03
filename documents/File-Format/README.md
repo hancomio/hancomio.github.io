@@ -8,6 +8,14 @@
 **추가로, 2014년 10월 HWP 5.0 스펙의 보완 및 추가적인 스펙에 대하여 공개합니다.**
 해당 안내 문서를 이용하여 누구나 아래아한글 파일형식과, HWPML을 활용한 다양한 2차 저작물을 만들 수 있습니다.
 
+|문서 version|배포문서포맷|
+|---|---|
+|HWP 3.0/HWPML형식|[HWP](non-textbase-documents/한글문서파일형식3.0_HWPML_revision1.2.hwp), [PDF](non-textbase-documents/한글문서파일형식3.0_HWPML_revision1.2.pdf)|
+|HWP 5.0 형식|[HWP](한글문서파일형식_5.0_revision1.2.hwp), [PDF](한글문서파일형식_5.0_revision1.2.pdf)|
+|배포용문서 형식|[HWP](한글문서파일형식_배포용문서_revision1.2.hwp), [PDF](한글문서파일형식_배포용문서_revision1.2.pdf)|
+|수식형식|[HWP](한글문서파일형식_수식_revision1.2.hwp), [PDF](한글문서파일형식_수식_revision1.2.pdf)|
+|차트형식|[HWP](한글문서파일형식_차트_revision1.2.hwp), [PDF](한글문서파일형식_차트_revision1.2.pdf)|
+
 ### HWPML이란?
 HWPML(Hangul Word-Processor Markup Language)은 한글과컴퓨터사가 2010년 공개한 아래한글 바이너리 문서 포맷인 HWP 형식을 XML 기반의 마크업 언어(Markup Language)로 기술할 수 있는 언어입니다. 
 이는 특정 어플리케이션 없이도 문서 내부의 콘텐츠를 확인할 수 있다는 의미이며, 1999년 XML이 W3C 표준화가 되면서 한컴에서 개방형 문서 형식을 목적으로 HWP 97부터 HWPML 1.0을 제공하기 시작하였습니다. 
