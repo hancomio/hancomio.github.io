@@ -37,7 +37,7 @@
   - Ubuntu
 
 ## 제품에 대한 자세한 내용은 아래 링크를 참고 하세요
-* [공식 홈페이지 DocsConverter 소개 자료](http://www.hancom.com/office_solution/product06_01.jsp)
+* [공식 홈페이지 DocsConverter 소개 자료](https://www.hancom.com/product/productOfficeSolutionMain.do?gnb0=23&gnb1=45)
 
 ## 제품 설치 방법
 DocsConverter의 설치 방법은 직접 설치와 Docker를 이용한 설치가 있습니다.
